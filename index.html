@@ -4,116 +4,217 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Chethan Kumar | Portfolio</title>
+    
+    <!-- Preload fonts to prevent delay -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Link CSS file - CRITICAL: This MUST be in the head -->
     <link rel="stylesheet" href="style.css"/>
+    
+    <!-- Prevent FOUC with inline critical styles -->
+    <style>
+        body {
+            background: #f8fafc;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero {
+            background: #0f172a;
+            min-height: 100vh;
+        }
+    </style>
 </head>
 <body>
 
     <!-- HEADER -->
     <header class="hero">
-        <img src="Profile.jpg" alt="Chethan Kumar" class="profile-pic">
-        <h1>Chethan Kumar S Gowda</h1>
-        <p>Fresher | Python • SQL • Web Development • Data Analysis</p>
-
-        <div class="links">
-            <a href="https://www.linkedin.com/in/chethan-kumar-71a908285/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/chethan4433" target="_blank">GitHub</a>
+        <div class="hero-content">
+            <img src="Profile.jpg" alt="Chethan Kumar" class="profile-pic">
+            <h1>Chethan Kumar S Gowda</h1>
+            <p class="subtitle">Full Stack Developer | Data Enthusiast</p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/chethan-kumar-71a908285/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/chethan4433" target="_blank">GitHub</a>
+            </div>
         </div>
     </header>
 
     <!-- ABOUT -->
-    <section class="section">
+    <section class="section fade-in">
         <h2>About Me</h2>
-        <p>
-            Aspiring and dedicated fresher with strong foundational skills in SQL, Excel, Python,
-            and Web Technologies. I enjoy building clean, responsive web interfaces and working
-            with data to extract meaningful insights. Highly motivated to learn and grow in a
-            professional software environment.
-        </p>
+        <div class="about-content">
+            <div>
+                <p class="about-text">
+                    I'm a passionate fresher developer with a strong foundation in Python, SQL, and modern web technologies. I love building clean, responsive web interfaces and transforming data into meaningful insights. My journey combines rigorous technical training with hands-on project experience, and I'm excited to bring creative problem-solving to professional teams.
+                </p>
+            </div>
+            <div class="about-highlights">
+                <div class="highlight-item">
+                    <div class="highlight-icon">🎓</div>
+                    <div class="highlight-text">
+                        <h4>B.E. in EEE</h4>
+                        <p>2024 • CGPA: 7.65</p>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">⚡</div>
+                    <div class="highlight-text">
+                        <h4>Quick Learner</h4>
+                        <p>Adapt fast to new technologies</p>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">🚀</div>
+                    <div class="highlight-text">
+                        <h4>Full Stack Ready</h4>
+                        <p>Frontend & backend development</p>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">💡</div>
+                    <div class="highlight-text">
+                        <h4>Problem Solver</h4>
+                        <p>Data analysis & optimization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- SKILLS -->
-    <section class="section bg">
-        <h2>Skills</h2>
-
+    <section class="section bg fade-in">
+        <h2>Technical Skills</h2>
         <div class="skills">
-            <span>Python</span>
-            <span>SQL</span>
-            <span>Excel</span>
-            <span>Power BI</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>NumPy</span>
-            <span>Pandas</span>
-            <span>Matplotlib</span>
-            <span>Django</span>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">SQL</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">HTML & CSS</div>
+            <div class="skill-card">Django</div>
+            <div class="skill-card">Flask</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">REST APIs</div>
+            <div class="skill-card">Pandas</div>
+            <div class="skill-card">NumPy</div>
+            <div class="skill-card">Power BI</div>
+            <div class="skill-card">Excel</div>
+            <div class="skill-card">Git</div>
+            <div class="skill-card">Postman</div>
         </div>
     </section>
 
     <!-- PROJECTS -->
-    <section class="section">
-        <h2>Projects</h2>
+    <section class="section fade-in">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon">🛍️</div>
+                <div class="project-content">
+                    <h3>Shopify-Style E-Commerce Webpage</h3>
+                    <p>
+                        Designed and developed a responsive e-commerce website with interactive UI components, smooth animations, and a clean, modern layout structure.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Shopify Project First -->
-        <div class="project">
-            <h3>Shopify-Style E-Commerce Webpage</h3>
-            <p>
-                Designed and developed a responsive Shopify-inspired e-commerce website using
-                pure HTML, CSS, and JavaScript. Implemented interactive UI components and clean
-                layout structure.
-            </p>
-        </div>
+            <div class="project-card">
+                <div class="project-icon">📊</div>
+                <div class="project-content">
+                    <h3>Data Analysis & Power BI Dashboard</h3>
+                    <p>
+                        Transformed raw datasets using SQL, created comprehensive data models, and built an interactive Power BI dashboard with dynamic filters and visualizations.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Data Analysis</span>
+                    </div>
+                </div>
+            </div>
 
-        <div class="project">
-            <h3>Data Analysis & Interactive Power BI Dashboard</h3>
-            <p>
-                Cleaned and transformed datasets using SQL. Built an interactive Power BI
-                dashboard with filters, charts, and analytical insights.
-            </p>
-        </div>
+            <div class="project-card">
+                <div class="project-icon">🌍</div>
+                <div class="project-content">
+                    <h3>RESTful Travel API</h3>
+                    <p>
+                        Built a complete RESTful API using Flask with full CRUD operations, SQLAlchemy ORM, SQLite database, and tested with Postman for robust API endpoints.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">SQLite</span>
+                    </div>
+                </div>
+            </div>
 
-        <div class="project">
-            <h3>RESTful Travel API ~ Flask & SQLite</h3>
-            <p>
-                Developed a RESTful Travel API using Python and Flask with full CRUD functionality for managing destination data, Designed and implemented database models using Flask-SQLAlchemy ORM with SQLite integration and tested it in Postman.
-            </p>
-        </div>
-
-        <div class="project">
-            <h3>IOT Based Smart Glove for Disabled People</h3>
-            <p>
-                Developed a smart glove using Arduino, flex sensors, and accelerometer to
-                convert sign language gestures into visual and audio output.
-            </p>
+            <div class="project-card">
+                <div class="project-icon">🤖</div>
+                <div class="project-content">
+                    <h3>IoT Smart Glove for Disabled</h3>
+                    <p>
+                        Developed a wearable device with Arduino, flex sensors, and accelerometer to convert sign language gestures into visual and audio outputs for accessibility.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">IoT</span>
+                        <span class="tag">Hardware</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- EDUCATION -->
-    <section class="section bg">
+    <section class="section bg fade-in">
         <h2>Education</h2>
-        <p>
-            <strong>B.E. – Electrical & Electronics Engineering</strong><br>
-            Channabasaveshwara Institute of Technology, Gubbi<br>
-            CGPA: 7.65 | Graduated: 2024
-        </p>
+        <div class="timeline-item">
+            <h3>B.E. – Electrical & Electronics Engineering</h3>
+            <div class="meta">Graduated: 2024</div>
+            <p><strong>Channabasaveshwara Institute of Technology, Gubbi</strong></p>
+            <p style="margin-top: 10px; color: var(--accent); font-weight: 500;">CGPA: 7.65/10</p>
+        </div>
     </section>
 
     <!-- INTERNSHIP -->
-    <section class="section">
-        <h2>Internship</h2>
-        <p>
-            <strong>Rajamane & Hegde Services Pvt Ltd</strong><br>
-            Intern Trainee (Jan 2024 – Feb 2024)<br>
-            Worked on induction motor assembly, coil winding, insulation,
-            and quality inspection processes.
-        </p>
+    <section class="section fade-in">
+        <h2>Experience</h2>
+        <div class="timeline-item">
+            <h3>Intern Trainee</h3>
+            <div class="meta">Jan 2024 – Feb 2024</div>
+            <p><strong>Rajamane & Hegde Services Pvt Ltd</strong></p>
+            <p style="margin-top: 10px;">Specialized in induction motor assembly, precision coil winding, advanced insulation techniques, and rigorous quality inspection processes. Gained hands-on experience in manufacturing and quality assurance.</p>
+        </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>📧 chethugowda721@gmail.com | 📞 7760551791</p>
-        <p>© 2026 Chethan Kumar</p>
+        <div class="footer-content">
+            <h3 style="margin-bottom: 20px; font-weight: 600;">Let's Connect</h3>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/chethan-kumar-71a908285/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/chethan4433" target="_blank">GitHub</a>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-contact">
+                📧 <a href="mailto:chethugowda721@gmail.com">chethugowda721@gmail.com</a>
+            </div>
+            <div class="footer-contact">
+                📞 <span>7760551791</span>
+            </div>
+            <div class="footer-divider"></div>
+            <p style="color: #cbd5e1; margin-top: 15px;">© 2026 Chethan4433.</p>
+        </div>
     </footer>
+
+    <!-- Link JavaScript file at the END of body -->
+    <script src="script.js"></script>
 
 </body>
 </html>
